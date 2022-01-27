@@ -21,6 +21,7 @@ const cwd = process.cwd()
     )
 
     for (let platform of platforms) {
+      // using try catch to avoid mistakes 
       try {
         let binaryName = `next-swc.${platform}.node`
         await copy(
